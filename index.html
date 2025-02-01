@@ -4,16 +4,19 @@
     <meta charset ="utf-8">
     <title>Giới thiệu bản thân</title>
     <style>
-        body {font-family: Arial, sans-serif;
-            background-color: white;
-
+        body {
+            font-family: Arial, sans-serif;
+            background-color: CadetBlue;
+            margin: 0;
+            padding: 0; 
         }
+
         .box {
             background-color: LightGray;
             height: 40px;
             color: gray;
-           
         }
+
         .box1 {
             font-size: large;
             color: black;
@@ -24,26 +27,36 @@
         p {
          color: black;
          font-family: 'Times New Roman', Times, serif;
-         font-size: x-large; 
+         font-size: x-large;
+         text-indent: 5px; 
         }
 
         .icon {
             position: absolute;
-            top: 25px; 
+            top: 20px; 
             left: 10px; 
         }
+
         .icon2 {
             position: absolute;
-            top: 170px; 
+            top: 160px; 
             right: 10px; 
             width: 30px;
             height: 30px;
         }
+
         a {
             position: absolute;
-            top:25%;
+            top:23%;
             left:37%;
             font-size: xx-large;
+        }
+
+        b {
+            position: absolute;
+            top:190px;
+            left: 47%;
+            font-size: xx-small;
         }
         
         table {
@@ -52,30 +65,40 @@
             display: flex;
             margin-left:300px;
             top: 30%;
-            box-shadow: 0 2px 8px cyan;
+            box-shadow: 10px 10px 20px rgba(0, 64, 64, 0.7);
             background-color: MediumSeaGreen;
             border: 3px solid black;
             border-collapse: collapse;
         }
-        th {padding: 15px;
-            text-align: center;
-            border: 2px solid black;
+
+        th {
+          padding: 15px;
+          text-align: center;
+          border: 2px solid black;
         }
+
         td {
-            padding: 15px;
-            
+            padding: 15px;    
         }
+
         .image {
             position: absolute;
             margin-top: 230px;
             margin-right: 230px;
-            border-radius: 20px;
+            border-radius: 50%;
             border: 3px solid black;
             top: 10px;
             right: 10px;
             width: 130px;
             height: 140px;
+            transition: all 1.7s ease-in-out;
         }
+
+        .image:hover {
+          transform: scale(2);
+          border-radius: 25px;
+        }
+
         z {
           font-size: xx-large;
           align-items: center;
@@ -88,41 +111,42 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
 <body>
-    <div class="box box1 box2"><strong>WIKIPEDIA</strong> 
+    <div class="box box1"><strong>WIKIPEDIA</strong> 
       <br>Bách khoa toàn thư mở
         <span class="material-symbols-outlined icon">
             menu
             </span>
     </div>  
-    <p><strong>Wikipedia: Nguyễn Trần Nam Hải</strong></p>
+    <p><strong> Wikipedia: Nguyễn Trần Nam Hải</strong></p>
     <span class="material-symbols-outlined icon2">
         star
         </span>
     <hr><br>
     <br><br><hr>
-    <img src="Tui ổn.jpg" alt="Image" class="image">
+    <img src="images/Tui ổn.jpg" alt="Image" class="image">
     <table>
         <tr>
             <a><strong>Nguyễn Trần Nam Hải</strong></a>
+            <b>eccedentesiast</b>
           </tr>
           <tr>
             <th rowspan="2">Giới thiệu</th>
           </tr>
           <tr>
-            <td><strong>Xin chào, mình là Nam Hải, hiện tại đang sinh sống tại <br>
-                   Đồng Hới. Mình rất vui được làm quen với mọi người.</strong></td>
+            <td><strong>Xin chào, mình là Nam Hải. Mình rất vui được làm quen với <br>
+            mọi người.</strong></td>
           </tr>
           <tr>
-            <th rowspan="2">Quê quán</th>
+            <th rowspan="2">Nơi cư trú</th>
           </tr>
           <tr>
-            <td><strong>Xã Mai Hóa, huyện Tuyên Hóa, tỉnh Quảng Bình</td>
+            <td><strong>Bắc Lý, tp Đồng Hới, tỉnh Quảng Bình</td>
           </tr>
           <tr>
-            <th rowspan="2">Lớp</th>
+            <th rowspan="2">Sự nghiệp</th>
           </tr>
           <tr>
-            <td><strong>12A3 THPT Đào Duy Từ</td>
+            <td><strong>Học sinh Trường THPT Đào Duy Từ</td>
           </tr>
           <tr>
             <th rowspan="2">Giới tính</th>
@@ -131,10 +155,10 @@
             <td><strong>Nam</strong></td>
           </tr>
           <tr>
-            <th rowspan="2">Dân tộc</th>
+            <th rowspan="2">Ngày sinh</th>
           </tr>
           <tr>
-            <td><strong>Kinh </strong></td>
+            <td><strong>07/02/20007 (Bảo Bình)</strong></td>
           </tr>
           <tr>
             <th rowspan="2">Quốc tịch </th>
@@ -149,7 +173,7 @@
             <td><strong>
               Email: nguyentrannamhai2000@gmail.com <br>
               SĐT: 0888278735 <br>
-              STK: 0888278735 <br>
+              Địa chỉ: Sao Thổ <br>
             </strong></td>
           </tr>
           <tr>
@@ -157,10 +181,10 @@
           </tr>
           <tr>
             <td><strong>
-              Theo nhiều tài liệu chính thống cũng như tiểu sử tại Việt Nam. Tên lúc nhỏ của Hải là Nguyễn Trần Nam Hải. Tuy nhiên, một số tài liệu ghi nhận tên lúc nhỏ của Hải chính là Nờ Tờ Nờ Hờ (người đàn ông bí ẩn, đầy quyền lực và giàu có nhất nhì giới ***).
+              Theo nhiều tài liệu chính thống cũng như tiểu sử tại Việt Nam. Tên lúc nhỏ của Hải là Nguyễn Trần Nam Hải. Tuy nhiên, một số tài liệu ghi nhận tên lúc nhỏ của Hải chính là Nờ Tờ Nờ Hờ (Người đàn ông bí ẩn, đầy quyền lực và là GOAT Tiktok).
             </strong></td>
           </tr>
     </table>
     <hr>
-    <z><strong>Hết rồi!</strong></z>
+    <z><strong>Xin Hết!</strong></z>
 </body>
